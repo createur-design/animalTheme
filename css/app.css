@@ -1,3 +1,38 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
 body{
-    background: red;
+    background: #fff;
+}
+nav ul{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin:0;
+    padding:0;
+    list-style: none;
+    transition: .3s;
+}
+nav ul li a{
+    display: block;
+    padding:1rem 0;
+    background-color: #fff;
+}
+nav ul li a::first-letter{
+    text-transform: uppercase;
+    color: cadetblue;
+}
+nav ul.show {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
 }
